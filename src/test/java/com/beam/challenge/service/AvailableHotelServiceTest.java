@@ -10,7 +10,7 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.ArgumentMatchers;
 import org.mockito.InjectMocks;
-import org.mockito.Spy;
+import org.mockito.Mock;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import com.beam.challenge.model.request.AvailableHotelSearchRequest;
@@ -29,10 +29,10 @@ public class AvailableHotelServiceTest {
 	@InjectMocks
 	private AvailableHotelServiceImpl bestHotelService;
 
-	@Spy
+	@Mock
 	private BestHotelProvider bestHotelProvider;
 
-	@Spy
+	@Mock
 	private CrazyHotelProvider crazyHotelProvider;
 
 	@Test
